@@ -1,0 +1,274 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    margin: 0;
+}
+
+body * {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+    padding: 0 2.5rem;
+}
+
+nav > ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+li {
+    list-style-type: none;
+    padding: 1rem;
+}
+
+li a {
+    font-size: 1.2rem;
+    color: #FBFBFF;
+    position: relative;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #FBFBFF;
+    text-decoration: none;
+}
+
+li a:hover::after {
+    content: '';
+    border: 1px solid #FBFBFF;
+    position: absolute;
+    bottom: -0.3rem;
+    left: 0;
+    right: 0;
+}
+
+header {
+    background-image: url('./images/landing.jpg');
+    background-attachment: fixed;
+    height: 100vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 5;
+}
+
+header h1, h2 {
+    text-align: center;
+    color: #FBFBFF;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0.25rem 0;
+}
+
+header h2 {
+    font-size: 1.8rem;
+    margin: 0.5rem;
+}
+
+#projects {
+    min-height: 100vh;
+    width: 100vw;
+    padding: 3rem;
+    text-align: center;
+}
+
+#projects * {
+    color: black;
+}
+
+#projects h2 {
+    margin: 0.5rem;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+#projects h2::after {
+    content: '';
+    border: 1px solid black;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+} 
+
+
+#projects-nav {
+    z-index: -1;
+    position: fixed;
+    top: 0.5rem;
+    right: 2rem;
+    width: 17.5rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    background: #70A288;
+    transform: skew(-20deg);
+}
+
+#projects-container {
+    width: 90vw;
+    display: flex;
+    align-content: flex-start;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.proj {
+    padding: 2rem;
+    width: 24rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 12rem;
+}
+
+.proj img {
+    width: 18rem;
+}
+
+.proj h3 {
+    margin: 0.5rem 0;
+}
+
+.project-links {
+    padding-bottom: 0.5rem;
+    z-index: 0;
+    position: relative;
+}
+
+.project-links a {
+    text-decoration: none;
+}
+
+.project-links a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.descr {
+    padding-bottom: 0.5rem;
+}
+
+.tech {
+    font-size: .8rem;
+}
+
+#contact {
+    min-height: 30vh;
+    background: #0B4F6C;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem;
+}
+
+#contact * {
+    color: #FBFBFF;
+}
+
+#get-in-touch {
+    position: relative;
+    font-size: 1.3rem;
+}
+
+#get-in-touch::after {
+    content: '';
+    border: 1px solid #FBFBFF;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0rem;
+    right: 0rem;
+}
+
+#contact h4 {
+    text-align: center;
+    margin: 0;
+}
+
+#email {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    text-decoration: none;
+}
+
+#email:hover{
+    color: #FFE2A5;
+}
+
+#links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#links i {
+    padding: 0.75rem 0.5rem;
+    font-size: 3rem;
+}
+
+#links i:hover {
+    color: #FFE2A5;
+}
+/* #70A288 */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em 0 1.5rem 0;
+}
+
+footer div {
+    padding: 0.25rem;
+}
+
+
+@media screen and (max-width: 600px){
+    nav > ul {
+        justify-content: center;
+    }
+
+    #projects {
+        padding: 1rem;
+    }
+
+    #projects-nav {
+        width: unset;
+        left: 2.5rem;
+        right: 2.5rem;
+    }
+
+    .proj img {
+        width: 16rem;
+    }
+}

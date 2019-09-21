@@ -62,7 +62,6 @@ li a:hover::after {
 }
 
 header {
-    /* background-image: url('./images/landing.jpg'); */
     background-attachment: fixed;
     display: flex;
     justify-content: center;

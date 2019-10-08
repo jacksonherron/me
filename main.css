@@ -7,7 +7,6 @@ html {
 }
 
 body {
-    overscroll-behavior: none;
     position: relative;
     margin: 0;
 }
@@ -24,6 +23,18 @@ nav {
     right: 0;
     z-index: 5;
     padding: 0 2.5rem;
+}
+
+#nav-background {
+    z-index: 3;
+    position: fixed;
+    top: 0.5rem;
+    right: 2rem;
+    width: 23.5rem;
+    height: 2.5rem;
+    padding: 0 1rem;
+    background: #70A288;
+    transform: skew(-20deg);
 }
 
 nav > ul {
@@ -62,12 +73,14 @@ li a:hover::after {
 }
 
 header {
+    background-image: url('./images/landing.jpg');
+    background-size: cover;
     background-attachment: fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
-    height: 100vh
+    height: 100vh;
 }
 
 #landing {
@@ -95,16 +108,137 @@ header h2 {
     margin: 0.5rem;
 }
 
-#projects {
+#me, #projects {
     min-height: 100vh;
     width: 100vw;
-    padding: 2rem 3rem;
-    text-align: center;
     background: #FBFBFF;
 }
 
-#projects * {
-    color: black;
+#me {
+    padding-top: 10vh;
+}
+
+#me-1 {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0 2rem;
+    margin: 0 50vw 0 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#me-1::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #FFD43A;
+    transform: skew(-20deg);
+}
+
+#me-1 > h1 {
+    font-size: 1.8rem;
+    margin: 2rem;
+    margin-right: 6rem;
+    color: #FBFBFF;
+    z-index: 1;
+
+}
+
+#me-2 {
+    min-height: 60vh;
+    margin: 5vh 0 0 15vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    font-size: 1.2rem;
+}
+
+#me-2::after {
+    content: '';
+    position: absolute;
+    right: -5rem;
+    width: 100%;
+    height: 100%;
+    background: #2E4057;
+    transform: skew(-20deg);
+}
+
+#me-2 * {
+    z-index: 1;
+    color: #FBFBFF;
+    text-align: center;
+}
+
+#me-2 > div {
+    margin: 5rem 20vh 10vh 20vw;
+}
+
+#CV {
+    justify-self: center;
+    margin-top: 2rem;
+}
+
+#me-2 a {
+    text-decoration: none;
+}
+
+#me-2 a:hover {
+    color: #FFD43A;
+}
+
+#articles {
+    background: #0B4F6C;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+#articles * {
+    color: #FBFBFF;
+}
+
+#articles h2 {
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+}
+
+#articles h2::after {
+    content: '';
+    border: 1px solid #FBFBFF;
+    position: absolute;
+    bottom: -0.5rem;
+    left: 0;
+    right: 0;
+} 
+
+#articles h3 {
+    padding: 1rem 0;
+    font-size: 1.3rem;
+}
+
+#articles a {
+    text-decoration: none;
+}
+
+#articles a:hover {
+    color: #FFD43A;
+}
+
+#projects {
+    padding: 2rem 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
 }
 
 #projects h2 {
@@ -112,32 +246,23 @@ header h2 {
     font-size: 1.5rem;
     display: inline-block;
     position: relative;
-    color: #2E294E;
+    color: #2E4057;
 }
 
 #projects h2::after {
     content: '';
-    border: 1px solid #2E294E;;
+    border: 1px solid #2E4057;
     position: absolute;
     bottom: -0.5rem;
     left: 0;
     right: 0;
 } 
 
-
-#projects-nav {
-    z-index: 3;
-    position: fixed;
-    top: 0.5rem;
-    right: 2rem;
-    width: 17.5rem;
-    height: 2.5rem;
-    padding: 0 1rem;
-    background: #70A288;
-    transform: skew(-20deg);
+#projects-title {
+    align-self: flex-start;
 }
 
-#projects-container {
+.projects-container {
     width: 90vw;
     display: flex;
     align-content: flex-start;
@@ -154,13 +279,21 @@ header h2 {
     justify-content: flex-start;
 }
 
+.proj * {
+    color: #2E4057;
+}
+
 .image-container {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 0.5rem;
-    background: #2E294E;
+    background: #0B4F6C;
     border-radius: 5px;
+}
+
+.proj > a:hover > .image-container{
+    background: #FFD43A;
 }
 
 .proj img {
@@ -184,6 +317,7 @@ header h2 {
 .project-links a:hover {
     cursor: pointer;
     text-decoration: underline;
+    color: #FFD43A;
 }
 
 .descr {
@@ -245,9 +379,8 @@ header h2 {
 }
 
 #links i:hover {
-    color: #FFE2A5;
+    color: #FFD43A;
 }
-/* #70A288 */
 
 footer {
     display: flex;
@@ -255,14 +388,16 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 3em 0 1rem 0;
-    color: #FBFBFF;
     background: #70A288;
+}
+
+footer * {
+    color: #FBFBFF;
 }
 
 footer div {
     padding: 0.25rem;
 }
-
 
 @media screen and (max-width: 600px){
     nav > ul {
@@ -305,3 +440,4 @@ footer div {
         padding: 1rem;
     }
 }
+

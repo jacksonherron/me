@@ -9,39 +9,49 @@
     <title>Jackson Herron</title>
 </head>
 <body>
-    <header id="me">
-        <img id="landing" src="./images/landing.jpg"/>
+    <header>
         <div>
             <h1>Jackson Herron</h1>
             <h2>Chemical Engineer & Software Developer</h2>
         </div>
     </header>
+    <div id="nav-background"></div>
     <nav>
         <ul>
+            <li><a href="#me">Me</a></li>
+            <li><a href="#articles">Articles</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
-            <li><a href="#me">Me</a></li>
         </ul>
     </nav>
-    <section id="projects">
-        <h2>Software Portfolio</h2>
-        <div id="projects-nav"></div>
-        <div id=projects-container>
-            <div class="proj" id="yogi">
-                <div class="image-container">
-                    <img src="./images/yogi.png"/>
-                </div>
-                <h3>Yogi</h3>
-                <div class="project-links"><a href="https://github.com/jacksonherron/Yogi" target="_blank">GitHub</a> (in progress)</div>
-                <div class="descr">Social app and marketplace for yogis</div>
-                <div class="tech">MongoDB | Express | React | NodeJS</div>
+    <section id="me">
+        <div id="me-1">
+            <h1>
+                My Story
+            </h1>
+        </div>
+        <div id="me-2">
+            <div>
+                <div>I was born and raised in Park City, UT. In 2014, after being awarded the International Leader of Tomorrow Award scholarship, I moved to Vancouver, Canada to study at the University of British Columbia, where I received my Bachelors of Applied Science with honors in Chemical and Biological Engineering. Following this up, I enrolled in a Software Engineering Immersive with General Assembly SF from June-September 2019 to strengthen my digital skills relevant to the Bay Area clean tech economy. With my educational experiences behind me, I am excited to embark on a career in the clean energy revolution.</div>
+                <div id="CV"><a href="./documents/Jackson-Herron-CV.pdf" target="_blank">Résumé</a></div>
             </div>
+        </div>
+    </section>
+    <section id="articles">
+        <h2>Articles</h2>
+        <h3><a href="https://www.linkedin.com/pulse/graduation-trip-alaskan-wilderness-climate-change-jackson-herron/" target="_blank">LinkedIn article I wrote about my graduation trip with my father to Alaska, October 2019</a></h3>
+        <h3><a href="https://apsc.ubc.ca/spotlight/jackson-herron" target="_blank">Interview after being nominated as an UBC Applied Science Rising Star, May 2019</a></h3>
+    </section>
+    <section id="projects">
+        <h2 id="projects-title">Projects</h2>
+        <h2>General Assembly, 2019</h2>
+        <div class=projects-container>
             <div class="proj">
                 <div class="image-container">
                     <img src="./images/storehouse.png"/>
                 </div>
                 <h3>StoreHouse</h3>
-                <div class="project-links"><a href="https://github.com/jacksonherron/StoreHouse" target="_blank">GitHub</a> | <a href="https://storehouse-app.herokuapp.com" target="_blank">Heroku</a></div>
+                <div class="project-links">[ <a href="https://github.com/jacksonherron/StoreHouse" target="_blank">GitHub</a> | <a href="https://storehouse-app.herokuapp.com" target="_blank">Heroku</a> ]</div>
                 <div class="descr">Solar-plus-storage cost savings calculator</div>
                 <div class="tech">Python | Flask | React | Genability | OSESMO</div>
             </div>
@@ -50,27 +60,48 @@
                     <img src="./images/wayfarer.png"/>
                 </div>
                 <h3>Wayfarer</h3>
-                <div class="project-links"><a href="https://github.com/jacksonherron/Wayfarer" target="_blank">GitHub</a> | <a href="https://wayfarer-mern-frontend.herokuapp.com" target="_blank">Heroku</a></div>
+                <div class="project-links">[ <a href="https://github.com/jacksonherron/Wayfarer" target="_blank">GitHub</a> | <a href="https://wayfarer-mern-frontend.herokuapp.com" target="_blank">Heroku</a> ]</div>
                 <div class="descr">Tip-sharing site for globe-trotting travelers</div>
                 <div class="tech">MongoDB | Express | React | NodeJS</div>
-            </div>
-            <div class="proj">
-                <div class="image-container">
-                    <img src="./images/fieldr.png"/>
-                </div>
-                <h3>Fieldr</h3>
-                <div class="project-links"><a href="https://github.com/jacksonherron/Fieldr" target="_blank">GitHub</a> | <a href="https://fieldr-app.herokuapp.com" target="_blank">Heroku</a></div>
-                <div class="descr">Sports meetup app for the funky & stylish</div>
-                <div class="tech">MongoDB | Express | EJS | NodeJS</div>
             </div>
             <div class="proj">
                 <div class="image-container">
                     <img src="./images/gameoflife.png"/>
                 </div>
                 <h3>Game of Life</h3>
-                <div class="project-links"><a href="https://github.com/jacksonherron/Game-of-Life" target="_blank">GitHub</a> | <a href="https://jacksonherron.github.io/Game-of-Life/" target="_blank">GitHub.io</a></div>
+                <div class="project-links">[ <a href="https://github.com/jacksonherron/Game-of-Life" target="_blank">GitHub</a> | <a href="https://jacksonherron.github.io/Game-of-Life/" target="_blank">GitHub.io</a> ]</div>
                 <div class="descr">Interactive, life-like algorithm visualization</div>
                 <div class="tech">JavaScript | jQuery | HTML | CSS</div>
+            </div>
+        </div>
+        <h2>University of British Columbia, 2014-2019</h2>
+        <div class=projects-container>
+            <div class="proj">
+                <a href="./documents/Capstone-Poster.pdf" target="_blank">
+                    <div class="image-container">
+                        <img src="./images/capstone.jpg"/>
+                    </div>
+                </a>
+                <h3>Engineering Capstone Project</h3>
+                <div>Delivered a comprehensive design for an organic waste to renewable natural gas facility to our industry partner, Greenlane Biogas, taking a leadership role in the team of 8.</div>
+            </div>
+            <div class="proj">
+                <a href="https://blogs.ubc.ca/apsc498t/" target="_blank">
+                    <div class="image-container">
+                        <img src="./images/apsc498t.jpg"/>
+                    </div>
+                </a>
+                <h3>Student Directed Seminar Coordinator</h3>
+                <div>Created and facilitated a 400-level student seminar with 10 students in my final semester at UBC, titled APSC 498T: Decarbonization Technology and Policy.</div>
+            </div>
+            <div class="proj">
+                <a href="./documents/APSC-498T-Final-Report.pdf" target="_blank">
+                    <div class="image-container">
+                        <img src="./images/storage.jpg"/>
+                    </div>
+                </a>
+                <h3>California's Energy Storage Market</h3>
+                <div>A visual systems and map, written report, and oral presentation describing the future of energy storage in California's grid, presented in a team of 4 as our final project for APSC 498T.</div>
             </div>
         </div>
     </section>

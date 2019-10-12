@@ -260,6 +260,7 @@ header h2 {
 
 #projects-title {
     align-self: flex-start;
+    font-size: 2rem;
 }
 
 .projects-container {

@@ -169,6 +169,7 @@ header h2 {
 
 #selfie {
     width: 200px;
+    border-radius: 3px;
 }
 
 #story-container {
@@ -499,16 +500,17 @@ footer div {
         left: 0;
         right: 0;
         z-index: 5;
-        padding: 0 2.5rem;
+        padding: 0;
     }
     
     #nav-background {
         z-index: 3;
         position: fixed;
         top: 0.5rem;
-        left: 1rem;
-        right: 1rem;
+        left: 0;
+        width: 100vw;
         height: 2.5rem;
+        transform: skew(0)
     }
 
     nav > ul {
@@ -518,7 +520,11 @@ footer div {
         list-style: none;
         padding-left: 0;
         margin: 0;
-    }    
+    }
+    
+    header {
+        background-attachment: scroll;
+    }
 
     header h1 {
         font-size: 2rem;
@@ -594,7 +600,7 @@ footer div {
     }
 
     #projects, #articles {
-        padding: 1rem;
+        padding: 5vh 1rem;
     }
 
 

@@ -454,6 +454,14 @@ header h2 {
     margin: 0;
 }
 
+#contact h4 a {
+    text-decoration: none;
+}
+
+#contact h4 a:hover {
+    color: #FFD43A;
+}
+
 #email {
     padding: 0.5rem;
     padding-top: 1.5rem;

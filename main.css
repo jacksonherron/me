@@ -211,7 +211,7 @@ header h2 {
     left: 0;
     bottom: 0;
     top: 0;
-    background: #114C3D;
+    background: #26AD8B;
     z-index: -2;
 }
 
@@ -220,6 +220,7 @@ header h2 {
     font-size: 1.5rem;
     display: inline-block;
     position: relative;
+    z-index: 0;
 }
 
 #projects h2::after {
@@ -427,12 +428,12 @@ header h2 {
     left: 0;
     bottom: 0;
     top: 0;
-    background: #ABC0B3;
+    background: #70A288;
     z-index: -2;
 }
 
 #contact * {
-    color: #2E4057;
+    color: #0B4F6C;
 }
 
 #get-in-touch {
@@ -442,7 +443,7 @@ header h2 {
 
 #get-in-touch::after {
     content: '';
-    border: 1px solid #2E4057;
+    border: 1px solid #0B4F6C;
     position: absolute;
     bottom: -0.5rem;
     left: 0rem;
@@ -490,11 +491,11 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 3em 0 1em 0;
-    background: #70A288;
+    background: #A4D6B7;
 }
 
 footer * {
-    color: #FBFBFF;
+    color: #2E4057;
 }
 
 footer div {

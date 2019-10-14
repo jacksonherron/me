@@ -428,7 +428,7 @@ header h2 {
     left: 0;
     bottom: 0;
     top: 0;
-    background: #8DC0EF;
+    background: #A4D6B7;
     z-index: -2;
 }
 
@@ -491,11 +491,11 @@ footer {
     justify-content: center;
     align-items: center;
     padding: 3em 0 1em 0;
-    background: #A4D6B7;
+    background: #70A288;
 }
 
 footer * {
-    color: #2E4057;
+    color: #FBFBFF;
 }
 
 footer div {
